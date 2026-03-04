@@ -1,0 +1,7 @@
+credentials.yaml
+reports/
+*.pyc
+__pycache__/
+.venv/
+.env/
+.env
