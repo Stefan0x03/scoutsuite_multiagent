@@ -1,0 +1,14 @@
+# ScoutSuite scanner
+#scoutsuite
+
+# YAML + validation (used by scout_runner)
+#pydantic
+#pyyaml
+
+# Multi-agent framework
+#google-adk
+
+# LLM backend — supports OpenAI, Anthropic, Azure, Ollama, and more
+#litellm
+
+## This requirements file is buggy. I am too impatient to figure out the correct sequence of pip dependencies to avoid dependency conflicts
