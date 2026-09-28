@@ -133,6 +133,8 @@ class Config(BaseModel):
 
 def load_config(path: Path) -> Config:
     """Load and validate the YAML credentials file."""
+    if ".." in str(path):
+        raise ValueError("Invalid file path")
     with open(path) as fh:
         raw = yaml.safe_load(fh)
     if not isinstance(raw, dict):
